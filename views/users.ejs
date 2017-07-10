@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id=wrapper>
+    <div id=container>
+        <h1>Thank you for your interest!</h1>
+        <h1>Submitted Information</h1>
+
+        <h3>Name: <%= context.name %> </h3>
+        <h3>Age: <%= context.age %> </h3>
+        <h3>Your Location: <%= context.location %> </h3>
+        <h3>Occupation: <%= context.occupation %> </h3>
+        <h3>Comment: <%= context.comment %> </h3>
+        <a href="/"><h2>Go Back</h2></a>
+    </div>
+
+</div>
+</body>
+</html>

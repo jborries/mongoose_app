@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id=wrapper>
+    <div id=container>
+        <h1>Big Brothers Big Sisters Inquiry Form</h1>
+        <form action="/users" method="post">
+            <h3>Your Name: </h3> <input type="textbox" name="name">
+            <h3>Your Age: </h3> <input type="textbox" name="age">
+            <h3>Your Location: </h3>
+                <select name="location">
+                    <option value="Mountain View">Fort Worth</option>
+                    <option value="Sacrament">Dallas</option>
+                    <option value="Dallas">Houston</option>
+                </select>
+            <h3>Occupation: </h3>
+                <select name="occupation">
+                    <option value="Business">Business</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Education">Education</option>
+                    <option value="Government">Government</option>
+                    <option value="Other">Other</option>
+                </select>
+            <h3>Comment (optional):</h3>
+            <textarea rows="4" cols="50" name="comment">Enter Comments...</textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+</body>
+</html>
