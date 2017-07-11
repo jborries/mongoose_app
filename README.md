@@ -1,3 +1,1 @@
-# mongoose_app
-
-A nodeJS example app for BBBS inquiries.
+# inquiry_form
