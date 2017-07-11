@@ -41,6 +41,8 @@ app.post('/users', function(req, res) {
       age: req.body.age,
       occupation: req.body.occupation,
       location: req.body.location,
+      phone: req.body.phone,
+      email: req.body.email,
       other: req.body.other,
       comment: req.body.comment
   });
@@ -49,10 +51,12 @@ app.post('/users', function(req, res) {
   age: req.body.age,
   occupation: req.body.occupation,
   location: req.body.location,
+  phone: req.body.phone,
+  email: req.body.email,
   other: req.body.other,
   comment: req.body.comment
 });
-  // Try to save that new user to the database (this is the method that actually inserts into the db) and run a callback function with an error (if any) from the operation.
+  // this is the method that actually inserts into the db and run a callback function with an error (if any) from the operation.
   user.save(function(err) {
     // if there is an error console.log that something went wrong!
     if(err) {
