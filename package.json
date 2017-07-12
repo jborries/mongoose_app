@@ -1,10 +1,15 @@
 {
-  "name": "basic_mongoose_app",
+  "name": "charity_volunteer_inquiry_form",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.0",
+     "npm": "5.2.0"
+},
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
