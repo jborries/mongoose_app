@@ -26,6 +26,10 @@ app.use(express.static(path.join(__dirname, './static')));
 app.set('views', path.join(__dirname, './views'));
 // Setting our View Engine set to EJS
 app.set('view engine', 'ejs');
+//set port to listen to for heroku deployment
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 // Routes
 // Root Request
 app.get('/', function(req, res) {
@@ -67,10 +71,7 @@ app.post('/users', function(req, res) {
     }
   })
 })
-//set port to listen to for heroku deployment
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+
 // Setting our Server to Listen on Port: 8000
 //app.listen(8000, function() {
 //    console.log("listening on port 8000");
